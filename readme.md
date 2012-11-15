@@ -4,3 +4,5 @@ To Do
 -----
 - Fluid grid on websites.html in IE8
 - Get production versions of third party CSS/JS 
+- Improve mobile appearance
+- Improve page titles
