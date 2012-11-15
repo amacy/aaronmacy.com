@@ -1,14 +1,14 @@
 Aaron E. Macy
 =============
-                                     31 Angell Ct, Apt. 106, Stanford, CA XXXXX
+                                     31 Angell Ct, Apt. 106, Stanford, CA 94305
                            (207) 756-9457 / aaronmacy@gmail.com / aaronmacy.com
 
 Relevant Work Experience
 ------------------------
 ###Freelance Web Developer (aaronmacy.com/websites)...............Asheville, NC
 *October 2012 - present*
-- Developed, designed and maintained standards-based websites using Ruby on Rails, XHTML/HTML5, CSS3/SASS, jQuery/JavaScript/CoffeeScript, Twitter Bootstrap, Jekyll,  Drupal, WordPress and PHP according to client needs
-- Provided web hosting on a Ubuntu VPS
+- Developed, designed and maintained standards-based websites using Ruby on Rails, XHTML/HTML5, CSS3/SASS, jQuery/JavaScript/CoffeeScript, Twitter Bootstrap, Jekyll, Drupal, WordPress and PHP according to client needs
+- Provided Linux web hosting and server administration for client sites
 - Wrote and edited web content
 
 ###Project Manager, Beetlebung Group LLC (beetlebung.com)....Vineyard Haven, MA

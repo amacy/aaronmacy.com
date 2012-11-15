@@ -1,14 +1,7 @@
 /* mixins, variables, etc. */
 
-$charcoal: rgb(65, 64, 66);
-$hotpink: rgb(236, 0, 140);
-
-@mixin vertical-gradient($top, $bottom) {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($top), to($bottom));
-  background: -webkit-linear-gradient(top, $top, $bottom); 
-  background:    -moz-linear-gradient(top, $top, $bottom);     
-  background:      -o-linear-gradient(top, $top, $bottom);
-}
+$charcoal: #414042;
+$hotpink: #ec008c;
 
 /* universal */
 
@@ -37,8 +30,9 @@ a {
 header.navbar-static-top {
   margin: 0 0 1.5em 0;
   nav.navbar-inner { 
-    background-color: $charcoal;
     background-image: none;
+    background-color: $charcoal;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414042',endColorstr='#414042',GradientType=0); /* overwrite Bootstrap default */
     a.brand{
       color: gray;
       font-size: 1.3em;
@@ -53,7 +47,7 @@ header.navbar-static-top {
       margin: 0; /* overwrite Bootstrap default */
       a {
         color: white;
-        padding: .75em 1.2em 1em 1.2em;
+        padding: .9em 1.2em 1em 1.2em;
         font-family: monaco, monospace;
         font-size: .8em;
         &:hover {

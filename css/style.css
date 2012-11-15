@@ -19,8 +19,10 @@ a {
 header.navbar-static-top {
   margin: 0 0 1.5em 0; }
   header.navbar-static-top nav.navbar-inner {
+    background-image: none;
     background-color: #414042;
-    background-image: none; }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414042',endColorstr='#414042',GradientType=0);
+    /* overwrite Bootstrap default */ }
     header.navbar-static-top nav.navbar-inner a.brand {
       color: gray;
       font-size: 1.3em;
@@ -34,7 +36,7 @@ header.navbar-static-top {
       /* overwrite Bootstrap default */ }
       header.navbar-static-top nav.navbar-inner ul.nav a {
         color: white;
-        padding: .75em 1.2em 1em 1.2em;
+        padding: .9em 1.2em 1em 1.2em;
         font-family: monaco, monospace;
         font-size: .8em; }
         header.navbar-static-top nav.navbar-inner ul.nav a:hover {
