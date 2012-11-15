@@ -15,53 +15,124 @@ $hotpink: rgb(236, 0, 140);
 /* typography */
 
 body {
-  font-family: 'minion pro';
+  font-family: 'minion-pro', 'palatino linotype', georgia, serif;
+  font-size: 1.1em;
+  line-height: 1.275em;
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { 
+  font-weight: normal;
+  margin: 0;
+}
 
 a {
   color: $hotpink;
   &:hover {
+    color: $hotpink; 
   }
 }
 
 /* header */
 
-header {
-  nav { 
-    position: fixed;
-    top: 0;
-    right: 0;
-    h1#site-name { 
-      margin: 0;
+header.navbar-static-top {
+  margin: 0 0 1.5em 0;
+  nav.navbar-inner { 
+    background-color: $charcoal;
+    background-image: none;
+    a.brand{
+      color: gray;
+      font-size: 1.3em;
+      line-height: 1.3em;
+      padding: .4em 0 .4em 0;
+      &:hover {
+        color: $hotpink;
+        text-decoration: none;
+      }
     }
     ul.nav {
       margin: 0; /* overwrite Bootstrap default */
       a {
         color: white;
-        background-color: $charcoal;
         padding: .75em 1.2em 1em 1.2em;
         font-family: monaco, monospace;
+        font-size: .8em;
         &:hover {
           background-color: $hotpink;
           color: white;
         }
-      }
+      }  
     }
   }
 }
 
-
 /* content */
 
 div#content {
-  h2#page-title {
+  h1#page-title {
+    font-size: 1.25em;
+    margin: 0 0 .3em 0;
+    text-align: center;
+    color: black;
+  }
+  h2 {
+    font-size: 1.15em;
+    color: black;
   }
 }
 
 /* footer */
 
+footer {
+  padding: 2em 0 2em 0;
+  color: gray;
+  ul.contact li {
+    list-style-type: none;
+    a { 
+      color: gray;
+      text-decoration: underline;
+    }
+  }
+}
+
 /* home */
 
-h2#page-title { display: none; }
+p.about { 
+  margin: 0; 
+}
+
+h2#posts-header { 
+  font-size: 1.25em;
+  margin: .75em 0 .3em 0;
+}
+
+ul.posts li, ul.writing li {
+  line-height: 1.5em;
+  list-style-type: none;
+  span.date { 
+    font-family: monaco, monospace;
+    font-size: .8em;
+    color: $charcoal;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+/* websites */
+
+div.row-fluid.site { 
+  padding: 0 0 2em 0;
+  img { border: 5px solid $charcoal; }
+  ul.websites {
+    margin-left: 0;
+    li {
+      list-style-type: none;
+      line-height: 1.5em;
+      span.attributes {
+        font-family: monaco, monospace;
+        font-size: .8em;
+      }
+    }
+  }
+}

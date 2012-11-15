@@ -2,5 +2,10 @@
 layout: default
 title: Aaron E. Macy - Bay Area Web Developer
 ---
-<p>Bay Area web developer. I previously worked for <a href="http://beetlebung.com" target="_blank">Beetlebung</a> overseeing operations, product development and online marketing.</p>
-<h3>Posts</h3>
+<p class="about">Bay Area web developer. I previously worked for <a href="http://beetlebung.com" target="_blank">Beetlebung</a> overseeing operations, product development and online marketing.</p>
+<h2 id="posts-header">Posts</h2>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span class="date">{{ post.date | date_to_string }}:</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

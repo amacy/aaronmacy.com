@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
 
     <!-- css -->
@@ -18,31 +19,39 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav>
-        <ul class="nav">
-          <li class="pull-left"><a href="websites/list.html">websites</a></li>
-          <li class="pull-left"><a href="/">blog</a></li>
-          <li class="pull-left"><a href="contact.html">contact</a></li>
-          <li class="pull-left"><a href="projects/list.html">projects</a></li>
-          <li class="pull-left"><a href="resume.md">resume</a></li>
-          <li class="pull-left"><a href="writing.html">writing</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <h1 id="site-title">Aaron E. Macy</h1>
-      </div>
+    <header class="navbar-static-top">
+        <nav class="navbar-inner">
+          <div class="container">
+            <div class="row-fluid">
+              <div class="span12">
+                <a class="brand pull-left" href="/">Aaron E. Macy</a>
+                <ul class="nav pull-right">
+                  <li class="pull-left"><a href="websites.html">websites</a></li>
+                  <li class="pull-left"><a href="writing.html">writing</a></li>
+                  <li class="pull-left"><a href="aaron-macy-resume.md">resume</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
     </header>
     <!-- page-specific content -->
     <div class="container" id="content">
-      <h2 id="page-title">{{ page.title }}</h2>
       {{ content }}
     </div>
 
     <!-- footer -->
     <footer>
-      <div class="container">
-      </div>
+      <small>
+        <div class="container">
+          <ul class="contact pull-right">
+            <li>aaronmacy@gmail.com</li>
+            <li><a href="http://twitter.com/amacy/" target="_blank">twitter.com/amacy</a></li>
+            <li><a href="http://github.com/amacy/" target="_blank">github.com/amacy</a></li>
+            <li><a href="http://instagram.com/amacy/" target="_blank">instagram.com/amacy</a></li>
+          </ul>
+        </div>
+      </small>
     </footer>
   </body>
 </html>
