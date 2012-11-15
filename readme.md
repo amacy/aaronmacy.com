@@ -2,4 +2,5 @@ My personal site rebuilt & redesigned with Jekyll.
 
 To Do
 -----
-- fluid grid on websites.html in IE8
+- Fluid grid on websites.html in IE8
+- Get production versions of third party CSS/JS 
