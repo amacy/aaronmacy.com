@@ -10,7 +10,7 @@ $hotpink: #ec008c;
 body {
   font-family: 'minion-pro', 'palatino linotype', georgia, serif;
   font-size: 1.1em;
-  line-height: 1.275em;
+  line-height: 1.55em;
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -78,6 +78,7 @@ div#content {
 
 footer {
   padding: 2em 0 2em 0;
+  line-height: 1.275em;
   color: gray;
   ul.contact li {
     list-style-type: none;
