@@ -3,5 +3,6 @@
 *.swp
 
 # Files that shouldn't be tracked:
+_drafts/
 _site/
 css/.sass-cache/
