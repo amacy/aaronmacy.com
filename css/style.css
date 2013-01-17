@@ -2,7 +2,7 @@
 /* universal */
 /* typography */
 body {
-  font-family: 'minion-pro', 'palatino linotype', georgia, serif;
+  font-family: "minion-pro", "palatino linotype", georgia, serif;
   font-size: 1.1em;
   line-height: 1.55em; }
 
@@ -16,37 +16,44 @@ a {
     color: #ec008c; }
 
 /* header */
-header.navbar-static-top {
+header {
+  background-color: #414042;
   margin: 0 0 1.5em 0; }
-  header.navbar-static-top nav.navbar-inner {
-    background-image: none;
-    background-color: #414042;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414042',endColorstr='#414042',GradientType=0);
-    /* overwrite Bootstrap default */ }
-    header.navbar-static-top nav.navbar-inner a.brand {
-      color: gray;
-      font-size: 1.3em;
-      line-height: 1.3em;
-      padding: .4em 0 .4em 0; }
-      header.navbar-static-top nav.navbar-inner a.brand:hover {
-        color: #ec008c;
-        text-decoration: none; }
-    header.navbar-static-top nav.navbar-inner ul.nav {
-      margin: 0;
-      /* overwrite Bootstrap default */ }
-      header.navbar-static-top nav.navbar-inner ul.nav a {
+  header nav.container a.brand {
+    color: gray;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding: 0.4em 0.8em 0.4em 0; }
+    header nav.container a.brand:hover {
+      color: #ec008c;
+      text-decoration: none; }
+  header nav.container ul {
+    margin: 0;
+    /* overwrite Bootstrap default */
+    list-style-type: none; }
+    header nav.container ul a {
+      color: white;
+      padding: 0.9em 1.2em 1em 1.2em;
+      font-family: monaco, monospace;
+      font-size: .8em;
+      display: block; }
+      header nav.container ul a:hover {
+        background-color: #ec008c;
         color: white;
-        padding: .9em 1.2em 1em 1.2em;
-        font-family: monaco, monospace;
-        font-size: .8em; }
-        header.navbar-static-top nav.navbar-inner ul.nav a:hover {
-          background-color: #ec008c;
-          color: white; }
+        text-decoration: none; }
+    header nav.container ul li.posts-link {
+      display: none; }
+  header nav.container button.btn {
+    margin: 8px 0 0 8px;
+    padding-left: 10px;
+    /* overwrite Bootstrap default */
+    padding-right: 8px;
+    /* overwrite Bootstrap default */ }
 
 /* content */
 div#content h1#page-title {
   font-size: 1.25em;
-  margin: 0 0 .3em 0;
+  margin: 0 0 0.3em 0;
   text-align: center;
   color: black; }
 div#content h2 {
@@ -70,12 +77,12 @@ p.about {
 
 h2#posts-header {
   font-size: 1.25em;
-  margin: .75em 0 .3em 0; }
+  margin: 0.75em 0 0.3em 0; }
 
 ul.posts li, ul.writing li {
   line-height: 1.5em;
   list-style-type: none; }
-  ul.posts li span.date, ul.writing li span.date {
+  ul.posts li time.date, ul.writing li time.date {
     font-family: monaco, monospace;
     font-size: .8em;
     color: #414042; }

@@ -1,8 +1,10 @@
 # Files that do nothing:
 *.DS_Store
 *.swp
+*.swo
 
 # Files that shouldn't be tracked:
 _drafts/
 _site/
 css/.sass-cache/
+.sass-cache/

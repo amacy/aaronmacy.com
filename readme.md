@@ -1,6 +1,6 @@
-My personal site redesigned & rebuilt with Jekyll.
+My personal site/blog. Blog posts © me, Aaron Macy.
 
 To Do
 -----
-- Fluid grid on websites.html in IE8
-- Add Collapse to menu for smaller viewports
+- Improved nav on mobile
+- Fix stray pixed in menu on desktop

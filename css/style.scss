@@ -27,34 +27,41 @@ a {
 
 /* header */
 
-header.navbar-static-top {
+header {
+  background-color: $charcoal;
   margin: 0 0 1.5em 0;
-  nav.navbar-inner { 
-    background-image: none;
-    background-color: $charcoal;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414042',endColorstr='#414042',GradientType=0); /* overwrite Bootstrap default */
+  nav.container { 
     a.brand{
       color: gray;
       font-size: 1.3em;
       line-height: 1.3em;
-      padding: .4em 0 .4em 0;
+      padding: .4em .8em .4em 0;
       &:hover {
         color: $hotpink;
         text-decoration: none;
       }
     }
-    ul.nav {
+    ul {
       margin: 0; /* overwrite Bootstrap default */
+      list-style-type: none;
       a {
         color: white;
         padding: .9em 1.2em 1em 1.2em;
         font-family: monaco, monospace;
         font-size: .8em;
+        display: block;
         &:hover {
           background-color: $hotpink;
           color: white;
+          text-decoration: none;
         }
-      }  
+      } 
+      li.posts-link { display: none; }
+    }
+    button.btn { 
+      margin: 8px 0 0 8px;
+      padding-left: 10px; /* overwrite Bootstrap default */
+      padding-right: 8px; /* overwrite Bootstrap default */
     }
   }
 }
@@ -103,7 +110,7 @@ h2#posts-header {
 ul.posts li, ul.writing li {
   line-height: 1.5em;
   list-style-type: none;
-  span.date { 
+  time.date { 
     font-family: monaco, monospace;
     font-size: .8em;
     color: $charcoal;
