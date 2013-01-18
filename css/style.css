@@ -59,6 +59,21 @@ div#content h1#page-title {
 div#content h2 {
   font-size: 1.15em;
   color: black; }
+div#content h2#posts-header {
+  font-size: 1.25em;
+  margin: 0.75em 0 0.3em 0; }
+div#content ul.posts li, div#content ul.writing li {
+  line-height: 1.5em;
+  list-style-type: none; }
+  div#content ul.posts li time.date, div#content ul.writing li time.date {
+    font-family: monaco, monospace;
+    font-size: .8em;
+    color: #414042; }
+  div#content ul.posts li a, div#content ul.writing li a {
+    color: black;
+    text-decoration: underline; }
+    div#content ul.posts li a:hover, div#content ul.writing li a:hover {
+      color: #ec008c; }
 
 /* footer */
 footer {
@@ -74,21 +89,6 @@ footer {
 /* home */
 p.about {
   margin: 0; }
-
-h2#posts-header {
-  font-size: 1.25em;
-  margin: 0.75em 0 0.3em 0; }
-
-ul.posts li, ul.writing li {
-  line-height: 1.5em;
-  list-style-type: none; }
-  ul.posts li time.date, ul.writing li time.date {
-    font-family: monaco, monospace;
-    font-size: .8em;
-    color: #414042; }
-  ul.posts li a, ul.writing li a {
-    color: black;
-    text-decoration: underline; }
 
 /* websites */
 div.row-fluid.site {

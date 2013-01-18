@@ -79,6 +79,24 @@ div#content {
     font-size: 1.15em;
     color: black;
   }
+  h2#posts-header { 
+    font-size: 1.25em;
+    margin: .75em 0 .3em 0;
+  }
+  ul.posts li, ul.writing li {
+    line-height: 1.5em;
+    list-style-type: none;
+    time.date { 
+      font-family: monaco, monospace;
+      font-size: .8em;
+      color: $charcoal;
+    }
+    a {
+      color: black;
+      text-decoration: underline;
+      &:hover { color: $hotpink }
+    }
+  }
 }
 
 /* footer */
@@ -102,24 +120,6 @@ p.about {
   margin: 0; 
 }
 
-h2#posts-header { 
-  font-size: 1.25em;
-  margin: .75em 0 .3em 0;
-}
-
-ul.posts li, ul.writing li {
-  line-height: 1.5em;
-  list-style-type: none;
-  time.date { 
-    font-family: monaco, monospace;
-    font-size: .8em;
-    color: $charcoal;
-  }
-  a {
-    color: black;
-    text-decoration: underline;
-  }
-}
 
 /* websites */
 
