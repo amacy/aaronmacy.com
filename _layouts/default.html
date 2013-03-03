@@ -8,15 +8,11 @@
     <title>{{ page.title }}</title>
 
     <!-- css -->
-    <link href="/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
     <link href="/css/style.css" media="all" rel="stylesheet" type="text/css">
 
     <!-- javascripts -->
     <script type="text/javascript" src="//use.typekit.net/syv4lmf.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-    <script src="/javascripts/bootstrap.min.js" type="text/javascript"></script>
-    <script src="/javascripts/scripts.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -32,41 +28,31 @@
     </script>
   </head>
   <body>
+    <div id="container">
+      <!-- header -->
+      <header>
+        <h1 class="site-name"><a href="/">Aaron E. Macy</a></h1>
+      </header>
 
-    <!-- header -->
-    <header>
-      <nav class="container">
-        <ul id="nav">
-          <li class="pull-left visible-phone"><a href="/">posts</a></li>
-          <li class="pull-left"><a href="websites.html"><span class="hidden-phone">web</span>sites</a></li>
-          <li class="pull-left"><a href="writing.html">writing</a></li>
-          <li class="pull-left"><a href="aaron-macy-resume.pdf">resume</a></li>
-        </ul>
-        <button type="button" class="btn" data-toggle="collapse" data-target="#nav">
-          <i class="icon-plus"></i>
-        </button>
-        <a class="brand pull-right" href="/">Aaron E. Macy</a>
-      </nav>
-    </header>
+      <!-- page-specific content -->
+      <section id="page-content">
+        {{ content }}
+      </section>
 
-    <!-- page-specific content -->
-    <div class="container" id="content">
-      {{ content }}
-    </div>
-
-    <!-- footer -->
-    <footer>
-      <small>
-        <div class="container">
-          <ul class="contact pull-right">
+      <!-- footer -->
+      <footer>
+        <small>
+          <ul>
             <li>aaronmacy@gmail.com</li>
-            <li><a href="http://twitter.com/amacy/" target="_blank">twitter.com/amacy</a></li>
-            <li><a href="http://github.com/amacy/" target="_blank">github.com/amacy</a></li>
-            <li><a href="http://instagram.com/amacy/" target="_blank">instagram.com/amacy</a></li>
-            <li>Posts © <time>2013</time> Aaron Macy</li>
+            <li><a href="http://github.com/amacy/" target="_blank">github</a></li>
+            <li><a href="http://twitter.com/amacy/" target="_blank">twitter</a></li>
+            <li><a href="http://instagram.com/amacy/" target="_blank">instagram</a></li>
+            <li><a href="http://linkedin.com/in/aaronmacy/" target="_blank">linkedin</a></li>
+            <li><a href="writing.html">older writing</a></li>
+            <li>Posts © <time>2012-3</time> Aaron Macy</li>
           </ul>
-        </div>
-      </small>
-    </footer>
+        </small>
+      </footer>
+    </div>
   </body>
 </html>

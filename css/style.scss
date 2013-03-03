@@ -9,8 +9,12 @@ $hotpink: #ec008c;
 
 body {
   font-family: 'minion-pro', 'palatino linotype', georgia, serif;
-  font-size: 1.1em;
-  line-height: 1.55em;
+  font-size: 18px;
+}
+
+div#container {
+  margin: auto;
+  max-width: 600px;
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -18,122 +22,51 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-a {
-  color: $hotpink;
-  &:hover {
-    color: $hotpink; 
-  }
+ul, ul li { 
+  list-style-type: none;
+  padding: 0;
 }
 
-/* header */
 
 header {
-  background-color: $charcoal;
-  margin: 0 0 1.5em 0;
-  nav.container { 
-    a.brand{
-      color: gray;
-      font-size: 1.3em;
-      line-height: 1.3em;
-      padding: .4em .8em .4em 0;
-      &:hover {
-        color: $hotpink;
-        text-decoration: none;
-      }
-    }
-    ul {
-      margin: 0; /* overwrite Bootstrap default */
-      list-style-type: none;
-      a {
-        color: white;
-        padding: .9em 1.2em 1em 1.2em;
-        font-family: monaco, monospace;
-        font-size: .8em;
-        display: block;
-        &:hover {
-          background-color: $hotpink;
-          color: white;
-          text-decoration: none;
-        }
-      } 
-      li.posts-link { display: none; }
-    }
-    button.btn { 
-      margin: 8px 0 0 8px;
-      padding-left: 10px; /* overwrite Bootstrap default */
-      padding-right: 8px; /* overwrite Bootstrap default */
-    }
-  }
+  text-align: center;
+  h1 { a { text-decoration: none; }}
 }
 
-/* content */
-
-div#content {
-  h1#page-title {
-    font-size: 1.25em;
-    margin: 0 0 .3em 0;
-    text-align: center;
-    color: black;
-  }
-  h2 {
-    font-size: 1.15em;
-    color: black;
-  }
-  h2#posts-header { 
-    font-size: 1.25em;
-    margin: .75em 0 .3em 0;
-  }
-  ul.posts li, ul.writing li {
-    line-height: 1.5em;
-    list-style-type: none;
-    time.date { 
-      font-family: monaco, monospace;
-      font-size: .8em;
-      color: $charcoal;
-    }
-    a {
-      color: black;
-      text-decoration: underline;
-      &:hover { color: $hotpink }
-    }
-  }
+code { 
+  display: block;
+  font-size: 14px;
+  background: black;
+  color: white;
+  line-height: 28px;
+  padding-left: 10px;
+  margin-top: 5px;
 }
 
-/* footer */
+a { &:hover { color: $hotpink }}
+
+ul.posts li, ul.writing li, ul.resources li {
+  time.date { 
+    font-size: 14px;
+    font-family: monaco, monospace;
+    color: $charcoal;
+  }
+}
 
 footer {
-  padding: 2em 0 2em 0;
-  line-height: 1.275em;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
   color: gray;
-  ul.contact li {
-    list-style-type: none;
-    a { 
-      color: gray;
-      text-decoration: underline;
-    }
-  }
-}
-
-/* home */
-
-p.about { 
-  margin: 0; 
-}
-
-
-/* websites */
-
-div.row-fluid.site { 
-  padding: 0 0 2em 0;
-  img { border: 5px solid $charcoal; }
-  ul.websites {
-    margin-left: 0;
+  ul {
+    margin: 0;
+    padding: 0;
     li {
-      list-style-type: none;
-      line-height: 1.5em;
-      span.attributes {
-        font-family: monaco, monospace;
-        font-size: .8em;
+      float: left;
+      margin-right: 10px;
+      a { 
+        color: gray;
+        text-decoration: underline;
       }
     }
   }
