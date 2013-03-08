@@ -20,7 +20,8 @@ ul, ul li {
 header {
   text-align: center; }
   header h1 a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
 
 code {
   display: block;

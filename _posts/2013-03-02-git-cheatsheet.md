@@ -13,11 +13,7 @@ undo last commit but keep changes:
 
 revert to last commit and discard uncommitted changes:
 <code>git reset --hard HEAD</code>
-
-[see also](http://stackoverflow.com/questions/927358/undo-last-git-commit)
-
-view a list of files modified in a commit:
-<code>git diff-tree --no-commit-id --name-only -r [commit number]</code>
+[*see also*] (http://stackoverflow.com/questions/927358/undo-last-git-commit)
 
 revert file to previous commit:
 <code>git co [commit number] path/to/file</code>
@@ -46,8 +42,24 @@ revert a single file to previous commit:
 
 permanently delete all uncommitted changes:
 <code>git clean -f</code>
+[*see also*] (http://stackoverflow.com/questions/61212/removing-untracked-files-from-your-git-working-copy)
+
+discard unstaged changes (but keep staged changes, if any):
+<code>git stash save --keep-index<br />
+git stash drop</code>
 
 <h3>Clone a repo</h3>
 
 copy repo to current directory:
 <code>git clone --no-hardVislinks path/to/repo</code>
+
+<h3>Get info about committed files</h3>
+
+view a list of files modified in a commit:
+<code>git diff-tree --no-commit-id --name-only -r [commit number]</code>
+
+comparing files that are different between 2 branches:
+<code>git diff --name-only [branch1] [branch2]</code>
+
+git log for a specific file:
+<code>git log -p path/to/file</code>
