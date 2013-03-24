@@ -37,6 +37,7 @@ print contents of file to terminal as committed previously:
 
 revert a single file to previous commit:
 <code>git checkout [commit number] file/to/restore</code>
+[*see also*](http://stackoverflow.com/questions/4114095/git-revert-to-previous-commit-how)
 
 <h3>Deleting stuff</h3>
 
@@ -60,6 +61,9 @@ view a list of files modified in a commit:
 
 comparing files that are different between 2 branches:
 <code>git diff --name-only [branch1] [branch2]</code>
+
+compare a file on two different branches:
+<code>git diff branch1 branch2 path/to/file</code>
 
 git log for a specific file:
 <code>git log -p path/to/file</code>
