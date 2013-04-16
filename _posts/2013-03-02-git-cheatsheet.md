@@ -15,6 +15,10 @@ revert to last commit and discard uncommitted changes:
 <code>git reset --hard HEAD</code>
 [*see also*] (http://stackoverflow.com/questions/927358/undo-last-git-commit)
 
+revert to a particular commit:
+<code>git reset --hard [commit number]</code>
+[*see also*](http://stackoverflow.com/questions/1338728/how-to-delete-a-git-commit)
+
 revert file to previous commit:
 <code>git co [commit number] path/to/file</code>
 (co is my alias for checkout)
@@ -29,6 +33,9 @@ delete a local git branch:
 
 change the location of the remote branch:
 <code>git remote set-url origin git://new.url.here</code>
+
+change a branch name:
+<code> git branch -m old_branch new_branch</code>
 
 <h3>Access old commits</h3>
 
@@ -67,3 +74,5 @@ compare a file on two different branches:
 
 git log for a specific file:
 <code>git log -p path/to/file</code>
+
+*last updated 04-13-2013*
